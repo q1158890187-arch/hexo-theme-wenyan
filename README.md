@@ -16,7 +16,7 @@ It combines:
 1. Clone this repo into your Hexo site:
 
 ```bash
-git clone https://github.com/fchange/hexo-theme-wenyan.git themes/wenyan
+git clone https://github.com/q1158890187-arch/hexo-theme-wenyan.git themes/wenyan
 ```
 
 2. Update your Hexo root `_config.yml`:
@@ -26,6 +26,27 @@ theme: wenyan
 ```
 
 3. Merge the options you need from `themes/wenyan/_config.yml`.
+
+## Quick Start
+
+After installing the theme, run your Hexo site locally:
+
+```bash
+hexo clean
+hexo server
+```
+
+Then open the local preview URL printed by Hexo, usually `http://localhost:4000`.
+
+For article pages with a table of contents, enable `toc: true` in the post front matter:
+
+```yml
+---
+title: My Post
+date: 2026-01-01
+toc: true
+---
+```
 
 ## Configuration
 
@@ -55,6 +76,7 @@ You will usually want to adjust:
 
 - Search is not bundled. Use a Hexo search generator such as `hexo-generator-search`.
 - If you want LaTeX rendering, install a renderer that fits your Hexo stack and keep `latex: true`.
+- The theme focuses on readable posts and does not include a full asset pipeline; keep custom scripts and styles in your Hexo site when possible.
 
 ## Credits
 
